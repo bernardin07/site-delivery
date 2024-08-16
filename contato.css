@@ -1,0 +1,47 @@
+body{margin: 0;}
+#fundo{background-image: url(image\ 1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 30%;
+    height: 100vh;}
+#contato{padding-left: 42%;
+padding-top: 30px;
+font-size: 60px;
+color: white;}
+#nome{color: white;
+padding-left: 45%;
+font-size: 30px;
+padding-top: 30px;}
+#email{
+color: white;
+padding-left: 45%;
+font-size: 30px;
+padding-top: 60px;}
+#telefone{color: white;
+    padding-left: 38%;
+    font-size: 30px;
+    padding-top: 60px;}
+#mensagem{color: white;
+    padding-left: 43%;
+    font-size: 30px;
+    padding-top: 60px;}
+#texto{margin-left: 39%;
+width: 300px;
+padding-top: 20px;
+font-size: 18px;
+}
+#texto3{margin-left: 40%;}
+#texto2{margin-left: 39%;
+        width: 300px;
+        font-size: 30px;
+    padding-top: 20px;}
+
+
+
+
+
+
+
+
+
+
