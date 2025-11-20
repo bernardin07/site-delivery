@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedidos - Best Burger</title>
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/pedidos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <img src="B (1) 1.png" alt="Best Burger Logo" class="logo">
+                    <span class="brand-name">Best Burger</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">HOME</a></li>
+                    <li><a href="menu.html" class="nav-link">MENU</a></li>
+                    <li><a href="quemsomos.html" class="nav-link">QUEM SOMOS</a></li>
+                    <li><a href="contato.html" class="nav-link">CONTATO</a></li>
+                    <li><a href="cadastro.html" class="nav-link">CADASTRO</a></li>
+                    <li><a href="pedidos.html" class="nav-link btn-order active">PEDIDOS</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="page-wrapper">
+        <div class="container">
+            <div class="order-container">
+                <div class="order-header">
+                    <h1 class="order-title">Fazer Pedido</h1>
+                    <p class="order-subtitle">Monte seu pedido personalizado</p>
+                </div>
+
+                <form class="order-form" id="orderForm">
+                    <div class="form-section">
+                        <h3 class="section-title">Escolha seu Hambúrguer</h3>
+                        <div class="form-group">
+                            <select id="burger" name="burger" class="form-control" required>
+                                <option value="">Selecione um hambúrguer</option>
+                                <option value="duplo-carnes">Duplo Carnes - R$ 18,90</option>
+                                <option value="x-tudo">X-Tudo - R$ 22,90</option>
+                                <option value="x-grandao">X-Grandão - R$ 20,90</option>
+                                <option value="x-salada">X-Salada + Fritas - R$ 19,90</option>
+                                <option value="best-burger">Best Burger - R$ 24,90</option>
+                                <option value="x-grandinho">X-Grandinho - R$ 17,90</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h3 class="section-title">Acompanhamentos</h3>
+                        <div class="accompaniments-grid">
+                            <label class="accompaniment-item">
+                                <input type="checkbox" name="accompaniments" value="refrigerante">
+                                <div class="item-card">
+                                    <div class="item-name">Refrigerante</div>
+                                    <div class="item-price">+ R$ 3,00</div>
+                                </div>
+                            </label>
+
+                            <label class="accompaniment-item">
+                                <input type="checkbox" name="accompaniments" value="batata-pequena">
+                                <div class="item-card">
+                                    <div class="item-name">Batata Pequena</div>
+                                    <div class="item-price">+ R$ 15,90</div>
+                                </div>
+                            </label>
+
+                            <label class="accompaniment-item">
+                                <input type="checkbox" name="accompaniments" value="batata-grande">
+                                <div class="item-card">
+                                    <div class="item-name">Batata Grande</div>
+                                    <div class="item-price">+ R$ 25,90</div>
+                                </div>
+                            </label>
+
+                            <label class="accompaniment-item">
+                                <input type="checkbox" name="accompaniments" value="bacon-cheddar">
+                                <div class="item-card">
+                                    <div class="item-name">Bacon + Cheddar</div>
+                                    <div class="item-price">+ R$ 10,00</div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h3 class="section-title">Dados da Entrega</h3>
+                        <div class="form-group">
+                            <label for="customerName">Seu Nome</label>
+                            <input type="text" id="customerName" name="customerName" class="form-control" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Telefone</label>
+                            <input type="tel" id="phone" name="phone" class="form-control" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="deliveryAddress">Endereço para Entrega</label>
+                            <textarea id="deliveryAddress" name="deliveryAddress" class="form-control" rows="3" placeholder="Rua, número, bairro, ponto de referência" required></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="observations">Observações (opcional)</label>
+                            <textarea id="observations" name="observations" class="form-control" rows="2" placeholder="Alguma observação especial?"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="order-summary">
+                        <h3>Resumo do Pedido</h3>
+                        <div id="orderSummary">
+                            <p>Selecione um hambúrguer para ver o resumo</p>
+                        </div>
+                        <div class="total-price">
+                            <strong>Total: <span id="totalPrice">R$ 0,00</span></strong>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-full btn-large">Finalizar Pedido</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/pedidos.js"></script>
+</body>
+</html>

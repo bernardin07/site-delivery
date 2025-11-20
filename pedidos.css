@@ -1,0 +1,17 @@
+body{margin: 0;}
+#fundo{background-image: url(image\ 1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 30%;
+    height: 100vh;}
+#hamburguer{color: white;
+padding-top: 30px;
+font-size: 35px;
+padding-left: 10px;}
+#desc{color: white;
+    padding-top: 30px;
+    font-size: 35px;
+padding-left: 15px;}
+#texto{margin-left: 20px;
+    width: 300px;
+    padding-top: 20px;}

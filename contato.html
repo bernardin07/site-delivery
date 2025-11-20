@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Best Burger</title>
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/forms.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <img src="B (1) 1.png" alt="Best Burger Logo" class="logo">
+                    <span class="brand-name">Best Burger</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">HOME</a></li>
+                    <li><a href="menu.html" class="nav-link">MENU</a></li>
+                    <li><a href="quemsomos.html" class="nav-link">QUEM SOMOS</a></li>
+                    <li><a href="contato.html" class="nav-link active">CONTATO</a></li>
+                    <li><a href="cadastro.html" class="nav-link">CADASTRO</a></li>
+                    <li><a href="pedidos.html" class="nav-link btn-order">PEDIDOS</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="page-wrapper">
+        <div class="container">
+            <div class="form-container">
+                <div class="form-header">
+                    <h1 class="form-title">Entre em Contato</h1>
+                    <p class="form-subtitle">Envie sua mensagem e entraremos em contato em breve!</p>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Seu Nome</label>
+                        <input type="text" id="name" name="name" class="form-control" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Seu Email</label>
+                        <input type="email" id="email" name="email" class="form-control" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Seu Telefone para Contato</label>
+                        <input type="tel" id="phone" name="phone" class="form-control" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Sua Mensagem</label>
+                        <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-full">Enviar Mensagem</button>
+                </form>
+
+                <div class="contact-info">
+                    <div class="info-item">
+                        <div class="info-icon">📞</div>
+                        <div class="info-content">
+                            <h3>Telefone</h3>
+                            <p>(31) 99546-3050</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">📍</div>
+                        <div class="info-content">
+                            <h3>Endereço</h3>
+                            <p>Rua Roquete Mendonça<br>São Luiz - BH</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">🕒</div>
+                        <div class="info-content">
+                            <h3>Horário</h3>
+                            <p>Seg - Dom: 18h às 23h</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/forms.js"></script>
+</body>
+</html>
